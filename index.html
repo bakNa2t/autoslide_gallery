@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments Slider Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js""></script>
+</head>
+<body>
+    <h1>Through the moments</h1>
+
+    <!-- Display images -->
+    <div class="gallery_container" id="gallery">
+
+        <!-- <div class="arrow_button"> -->
+        <a id="nav-button--prev" class="slider__nav-button"></a>
+        <!-- </div> -->
+
+        <img id="slide_img" src="">
+
+        <!-- <div class="arrow_button"> -->
+        <a id="nav-button--next" class="slider__nav-button"></a>
+        <!-- </div> -->
+
+        <div class="count_container" id="count_container"></div>
+
+        <div class="descripton_container" id="description_container">
+            <div class="desc_img" id="desc_img"></div>
+        </div>
+    </div>
+
+    <!-- Enable/Disable autosliding button -->
+    <div class="controls">
+        <div class="move" id="move">Enable Autosliding</div>
+        <div class="stop" id="stop">Disable Autosliding</div>
+    </div>
+
+    <!-- Dark mode toggle -->
+    <div class="mode">
+        <label for="dark-mode-btn" class="toggle">
+            <div class="toggle-track">
+                <input type="checkbox" class="toggle-checkbox" id="dark-mode-btn">
+                <span class="toggle-thumb"></span>
+                <img src="icnons/sun.png" alt="sun" />
+                <img src="icnons/moon.png" alt="moon" />
+            </div>
+        </label>
+    </div>
+
+    <div class="footer">
+        <div>Design by <span>Stay:OK</span></div>
+    </div>
+
+</body>
+</html>
