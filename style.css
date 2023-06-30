@@ -213,12 +213,12 @@ h1 {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    z-index: 2;
 }
 
 .footer div {
-    margin-left: 5px;
     margin-bottom: 5px;
     font-family: Tahoma, sans-serif;
     font-size: 0.8rem;
@@ -236,8 +236,8 @@ h1 {
 /* dark mode */
 .mode {
     position: fixed;
-    top: 25px;
-    right: 25px;
+    top: 15px;
+    right: 15px;
     z-index: 1;
 }
 
@@ -314,6 +314,7 @@ h1 {
         outline: 2px outset #708090;
     }
     .footer {
+        margin-left: 5px;
         left: 0;
     }
 }
