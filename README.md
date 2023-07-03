@@ -10,4 +10,6 @@
 
 ---
 
-[![AutoSlide Image Gallery](./icons/slidegallery.png)](https://bakna2t.github.io/autoslide_gallery/)
+<p align="center">
+ <a href="https://bakna2t.github.io/autoslide_gallery/"><img src="/icons/slidegallery.png" alt="AutoSlide Image Gallery"></a>
+</p>
