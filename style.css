@@ -4,14 +4,15 @@
 :root {
     --bg-color: rgba(196,195,208, 0.5);
     --thumb-color: #c9c0bb;
-    --text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
     --light-text-color: #000;
     --light-bg-color: #f9ffe3;
-    --boxshadow-color: 0 0 20px rgba(0, 0, 0, 0.75);
-    --toggle-box-shadow: 0px 0px 8px rgba(153,122,141, 0.8);
     --text-stroke-color: #afeeee;
     --controls-color: #242124;
+    --text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    --boxshadow-color: 0 0 20px rgba(0, 0, 0, 0.75);
     --header-text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    --footer-txt-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+    --toggle-box-shadow: 0px 0px 8px rgba(153,122,141, 0.8);
 }
 
 * {
@@ -35,12 +36,13 @@ body.dark {
     --light-bg-color: #8c92ac;
     --light-text-color: #b2beb5;
     --thumb-color: #98ff98;
-    --text-shadow: 0 0 6px rgba(234, 255, 255, 0.8);
-    --boxshadow-color: 0 0 20px rgba(255, 255, 255, 0.65);
-    --toggle-box-shadow: 0px 0px 8px rgba(240,255,255, 0.8);
     --text-stroke-color: #98ff98;
     --controls-color: #b2ffff;
+    --text-shadow: 0 0 6px rgba(234, 255, 255, 0.8);
+    --boxshadow-color: 0 0 20px rgba(255, 255, 255, 0.65);
     --header-text-shadow: 0 0 6px rgba(255, 255, 255, 0.85);
+    --footer-txt-shadow: 1px 1px 2px rgba(152,255,152, 0.9);
+    --toggle-box-shadow: 0px 0px 8px rgba(240,255,255, 0.8);
 }
 
 h1 {
@@ -53,6 +55,7 @@ h1 {
     -webkit-text-stroke: 0.015rem var(--text-stroke-color);
 }
 
+/* Gallery dispaly */
 .gallery_container {
     width: 350px;
     height: 230px;
@@ -153,6 +156,7 @@ h1 {
     text-shadow: 0px 0px 3px rgba(0,255,255, 0.9);
 }
 
+/* Stop/Start autosliding button */
 .controls {
     font-size: 12px;
     font-weight: 700;
@@ -207,27 +211,33 @@ h1 {
 
 .show-arrows {
     display: block;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
 
+/* 'Designed by' element*/
 .footer {
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     z-index: 2;
-}
-
-.footer div {
-    margin-bottom: 5px;
     font-family: Tahoma, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 800;
     color: var(--light-text-color);
 }
 
-.footer div span {
-    color: #ff8c00;
-    text-shadow: var(--header-text-shadow);
-    margin-left: 5px;
+.footer a {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--thumb-color);
+    text-shadow: var(--footer-txt-shadow);
+    transition: all 0.4s ease-in-out;
+}
+
+.footer a:hover {
+    transform: translateY(-3px);
+    color: rgba(57,255,20, 0.9);
+    transition: all 0.4s ease-in-out;
 }
 
 /* dark mode */
