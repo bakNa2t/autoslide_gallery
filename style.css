@@ -62,8 +62,8 @@ h1 {
 
 /* Gallery dispaly */
 .gallery_container {
-  width: 350px;
-  height: 230px;
+  width: 315px;
+  height: 220px;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
@@ -185,11 +185,13 @@ h1 {
   display: none;
   border-radius: 0.4rem;
   background-color: rgba(0, 255, 127, 0.4);
+  transition: 0.4s ease-in-out;
 }
 
 .move:hover {
   background-color: rgba(57, 255, 20, 0.9);
   box-shadow: var(--boxshadow-btn);
+  transition: 0.4s ease-in-out;
 }
 
 .stop {
@@ -200,11 +202,13 @@ h1 {
   height: 100%;
   border-radius: 0.4rem;
   background-color: rgba(255, 53, 94, 0.4);
+  transition: 0.4s ease-in-out;
 }
 
 .stop:hover {
   background-color: rgba(255, 64, 64, 0.9);
   box-shadow: var(--boxshadow-btn);
+  transition: 0.4s ease-in-out;
 }
 
 /* Changeing atributes with JS */
