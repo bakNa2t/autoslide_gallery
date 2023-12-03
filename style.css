@@ -67,7 +67,7 @@ h1 {
   -webkit-text-stroke: 0.015rem var(--text-stroke-color);
   visibility: hidden;
   opacity: 0;
-  animation: fadeUpHeader 0.6s ease-in-out forwards;
+  animation: fadeUpHeader 0.6s ease-in-out forwards 0.8s;
 }
 
 @keyframes fadeUpHeader {
@@ -88,6 +88,16 @@ h1 {
   overflow: hidden;
   border-radius: 15px;
   box-shadow: var(--boxshadow-color);
+  visibility: hidden;
+  opacity: 0;
+  animation: fadeUpGallery 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeUpGallery {
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .gallery_container img {
@@ -195,7 +205,7 @@ h1 {
   box-shadow: var(--toggle-box-shadow);
   visibility: hidden;
   opacity: 0;
-  animation: fadeUpControls 0.6s ease-in-out forwards;
+  animation: fadeUpControls 0.6s ease-in-out forwards 0.8s;
 }
 
 @keyframes fadeUpControls {
