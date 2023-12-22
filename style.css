@@ -126,12 +126,36 @@ h1 {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  animation: prevButton 1s ease-in-out;
+}
+
+@keyframes prevButton {
+  from {
+    opacity: 1;
+    transform: translateX(300px) translateY(0%);
+  }
+  to {
+    opacity: 0.6;
+    transform: translateX(0) translateY(-50%);
+  }
 }
 
 #nav-button--next {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  animation: nextButton 1s ease-in-out;
+}
+
+@keyframes nextButton {
+  from {
+    opacity: 1;
+    transform: translateX(-300px) translateY(0%);
+  }
+  to {
+    opacity: 0.6;
+    transform: translateX(0) translateY(-50%);
+  }
 }
 
 #nav-button--prev::after,
