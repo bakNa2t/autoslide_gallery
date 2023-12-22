@@ -391,7 +391,7 @@ noscript h3 {
 }
 
 /* Media queries */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   h1 {
     font-size: 40px;
     font-weight: 700;
